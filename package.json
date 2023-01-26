@@ -10,6 +10,10 @@
   "author": "Faisal",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "@google/maps": "^1.1.3",
+    "axios": "^1.2.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "hbs": "^4.2.0"
   }
 }
