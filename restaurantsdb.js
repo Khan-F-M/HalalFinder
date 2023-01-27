@@ -8,7 +8,8 @@ var sequelize = new Sequelize('pxmyhmki', 'pxmyhmki', 'Lecp8wJA3p8R--H1mgHF70F9i
     dialectOptions: {
         ssl: { rejectUnauthorized: false }
     },
-    query: { raw: true }
+    query: { raw: true },
+    logging: false // Add this line
 });
 
 const CuisineTypes = sequelize.define('cuisinetypes', {
