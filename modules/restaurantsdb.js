@@ -85,3 +85,40 @@ module.exports.getAllCuisineTypes = () => {
     });
 };
 
+
+module.exports.getResturantById = (id) => {
+    return new Promise((resolve, reject) => {
+        sequelize.sync().then(() => {
+            Restaurants.findByPk(id).then(restaurant => {
+                if(restaurant) {
+                    resolve(restaurant);
+                } else {
+                    reject(`No restaurant type found with id ${id}`);
+                }
+            }).catch(error => {
+                reject(error);
+            });
+        }).catch(error => {
+            reject(error);
+        });
+    });
+};
+
+
+module.exports.getCuisineTypeById = (id) => {
+    return new Promise((resolve, reject) => {
+        sequelize.sync().then(() => {
+            CuisineTypes.findByPk(id).then(cuisineType => {
+                if(cuisineType) {
+                    resolve(cuisineType);
+                } else {
+                    reject(`No cuisine type found with id ${id}`);
+                }
+            }).catch(error => {
+                reject(error);
+            });
+        }).catch(error => {
+            reject(error);
+        });
+    });
+};

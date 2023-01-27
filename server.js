@@ -26,4 +26,21 @@ app.get('/Categories', (req, res) => {
     })
 });
 
+app.get('/Restaurants/:id', (req, res) => {
+    rest.getResturantById(req.params.id).then((data) => {
+        res.json({data});
+    }).catch((err) => {
+        res.json({message: err});
+    })
+});
+
+app.get('/Categories/:id', (req, res) => {
+    rest.getCuisineTypeById(req.params.id).then((data) => {
+        res.json({data: data.category});
+    }).catch((err) => {
+        res.json({message: err});
+    })
+});
+
+
 app.listen(HTTP_PORT);
