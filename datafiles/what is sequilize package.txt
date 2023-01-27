@@ -1,0 +1,19 @@
+Sequelize is a JavaScript Object-Relational Mapping (ORM) library that can be used in any Node.js application. 
+	It provides an easy-to-use interface for interacting with a database and allows you to write JavaScript
+	code to perform common database operations such as creating, reading, updating, and deleting records.
+
+One of the main advantages of using an ORM like Sequelize is that it abstracts away the underlying SQL commands
+	and allows you to interact with the database using JavaScript. This can make your code more readable and
+	maintainable, as well as allowing you to write code that is more expressive and easy to understand.
+
+Additionally, Sequelize provides a powerful set of tools for working with databases, including support for complex
+	queries, transactions, and migrations. It also supports multiple database management systems, including MySQL,
+	MariaDB, SQLite, and PostgreSQL.
+
+It would come in handy in any Node.js application that requires database interaction. For example, it could be used
+	in web applications, web APIs, and command-line tools to perform CRUD (create, read, update, delete) operations
+	on a database. It could also be used in a back-end service that needs to store and retrieve data from a database.
+
+In summary, Sequelize is a useful tool for developers who are building Node.js applications that require database
+	interaction. It provides a powerful and easy-to-use interface for working with databases, and it abstracts
+	away the complexity of SQL commands, making it easy to write expressive and maintainable code.

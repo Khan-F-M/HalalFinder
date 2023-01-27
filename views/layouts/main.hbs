@@ -4,8 +4,6 @@
 <head>
     <title>My Site</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7upQpwpyINxcUbRZy6aP4hbXOqFwhPu8&libraries=places"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -17,29 +15,11 @@
         </nav>
     </header>
     <main>
-        <form action="/halal-restaurants" method="GET">
-            <label for="location-input">Location:</label>
-            <input type="text" id="location-input" name="location">
-            <input type="submit" value="Submit">
-        </form>
-
         {{{body}}}
     </main>
     <footer>
         Copyright © Khan-F-M
     </footer>
-
-    <script>
-        var input = document.getElementById('location-input');
-        var addressInput = document.getElementById('address');
-        var autocomplete = new google.maps.places.Autocomplete(input);
-
-        autocomplete.addListener('place_changed', function () {
-            var place = autocomplete.getPlace();
-            var address = place.formatted_address;
-            addressInput.value = address;
-        });
-    </script>
 </body>
 
 </html>

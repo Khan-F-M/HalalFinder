@@ -1,0 +1,19 @@
+Imagine you have a set of building blocks and each block represents a piece of information. 
+	In a database, these blocks are called "tables" and they store information in a structured
+	way, like a spreadsheet.
+
+Object Relational Mapping (ORM) is like a translator that helps your computer understand the blocks
+	and how they relate to each other. It's like having a guide that can speak the language of the
+	blocks and can tell your computer how to use them.
+
+For example, let's say you have two tables: one for students and one for classes. The student table
+	might have information like a student's name and age, and the class table might have information
+	like the class name and teacher. ORM helps the computer understand that each student is in one or
+	more classes and that each class has one or more students.
+
+ORM also helps the computer to interact with the database in an object-oriented way, which means you can
+	use code to create, read, update and delete the information in the tables, as if you were working
+	with real objects, like real students and classes in the real world.
+
+So ORM is like a guide that helps your computer understand and interact with the building blocks (tables)
+	in a database, using the language of code.

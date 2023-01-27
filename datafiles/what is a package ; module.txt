@@ -1,0 +1,14 @@
+Anything you install using npm (Node Package Manager) is called a package or module.
+
+When you install a package using npm, it is downloaded to your computer and added to a folder called
+	"node_modules". Each package can contain one or more JavaScript files, as well as other resources
+	such as images or documentation.
+
+You can use the packages you have installed by requiring them in your JavaScript files. For example,
+	you might use the following command to include a package called "lodash" in your code:
+
+const _ = require('lodash');
+Once you have required a package, you can use the functions and objects it exports in your code.
+
+In summary, anything you install using npm is called a package, and you can use the package by
+	requiring it in your javascript file and utilizing the functionalities it exports.

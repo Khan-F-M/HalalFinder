@@ -1,0 +1,45 @@
+The return new Promise syntax is used to create a new promise object. A promise is an object that represents a 
+	value that may not be available yet, but will be at some point in the future. Promises are commonly used
+	in JavaScript to handle asynchronous operations such as fetching data from a server or reading a file.
+
+In this example, the promise is created with a function that takes two parameters, resolve and reject. The resolve
+	function is called when the promise is fulfilled and the reject function is called when the promise is rejected.
+
+The code inside the promise function is where the asynchronous operation is performed. For example, it may
+	contain a call to an API to fetch some data. Once the data is received, the resolve function is called
+	with the data as an argument, indicating that the promise has been fulfilled. If an error occurs during
+	the asynchronous operation, the reject function is called with an error object, indicating that the promise
+	has been rejected.
+
+Once the promise is returned, it can be used in other parts of the code by chaining the .then() method,
+	which takes a function as an argument. This function will be called when the promise is fulfilled
+	and passed the resolved value as an argument. The .catch() method can also be used to handle rejected
+	promises, it takes a function as an argument and that function will be called with the rejected value
+	as an argument.
+
+Here's an example of how a promise can be used to fetch data from an API and display it on a page:
+*************************************************************************************
+return new Promise((resolve, reject) => {
+  fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(data => {
+      resolve(data);
+    })
+    .catch(error => {
+      reject(error);
+    });
+});
+*************************************************************************************
+
+and it can be used like this:
+*************************************************************************************
+fetchData().then(data => {
+   // code to display data on the page
+}).catch(error => {
+   // code to handle the error
+});
+*************************************************************************************
+
+In short, return new Promise((resolve, reject) => {...}) is syntax used to create a promise object which is returned.
+	The resolve function is called when the promise is fulfilled and the reject function is called when the promise
+	is rejected. The promise object can be used in other parts of the code by chaining the .then() and .catch() method.
