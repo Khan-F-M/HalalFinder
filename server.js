@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const rest = require('./restaurantsdb.js')
+const rest = require('./modules/restaurantsdb.js')
 
 const app = express();
 app.use(express.static('views'));
