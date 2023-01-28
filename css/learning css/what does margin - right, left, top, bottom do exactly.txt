@@ -1,0 +1,15 @@
+In CSS, the "margin" property is used to specify the space around an element. The "margin" property can take one,
+	two, three, or four values, which represent the margin for the top, right, bottom, and left sides of an element
+	respectively.
+
+The "margin" property creates space around an element, it doesn't make the element smaller. When you set a margin
+	value for an element, it creates empty space around the element, pushing it away from other elements on the page.
+
+For example, if you set a margin of 20px for an element, it will create 20px of space between the element and the
+	other elements around it. So the element itself will remain the same size, but it will be positioned further
+	away from other elements on the page.
+
+It's also worth noting that margins can be negative, which means they will collapse and the elements will overlap.
+
+Also, the space created by margins is transparent and it is outside the element's box, unlike padding which is inside
+	the element's box and it's background color is the same as the element's background color.
