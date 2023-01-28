@@ -1,0 +1,26 @@
+Yes, you can create custom attributes in HTML using the data-* attribute, as I mentioned before. 
+	The data-* attribute is used to store custom data private to the page or application. They
+	are not pre-defined attributes, you can make up any name you want as long as it starts with
+	"data-", it will be considered a valid custom attribute.
+
+In the example I provided, I used the attribute data-value to store the value of each button, but you
+	can use any name you prefer as long as it follows the data-* format.
+
+For example, you could use data-button-value, data-id or any other name you like.
+
+---------------------------------------------------------------------------------------
+<button type="button" class="btn btn-primary" data-button-value="1">Button 1</button>
+<button type="button" class="btn btn-primary" data-id="2">Button 2</button>
+---------------------------------------------------------------------------------------
+
+You just have to make sure to use the same attribute name when retrieving the value in javascript
+	and make sure it's loaded before your javascript code.
+
+js
+---------------------------------------------------------------------------------------
+let value = button.getAttribute("data-button-value");
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+let value = button.getAttribute("data-id");
+---------------------------------------------------------------------------------------

@@ -122,3 +122,25 @@ module.exports.getCuisineTypeById = (id) => {
         });
     });
 };
+
+module.exports.getRestaurantsByCuisineType = (cu_id) => {
+    return new Promise((resolve, reject) => {
+        sequelize.sync().then(() => {
+            Restaurants.findAll({
+                where: {
+                    cu_id: cu_id
+                }
+            }).then(restaurants => {
+                if(restaurants) {
+                    resolve(restaurants);
+                } else {
+                    reject(`No restaurants found with cu_id ${cu_id}`);
+                }
+            }).catch(error => {
+                reject(error);
+            });
+        }).catch(error => {
+            reject(error);
+        });
+    });
+};
