@@ -1,0 +1,5 @@
+1. For some reason, when I tried to make a map in main.js. The data.map wasn't working becasue for some reason it didn't recognize the 
+	incoming response as a JSON ARRAY. So in order to temporarily fix it, data.data.map worked because it recogized data as
+	a property in the JSON return object that has arrays inside of it.
+
+SOLUTION: I think this might be an error due to how I inserted the data. I will have to check the server side later...
