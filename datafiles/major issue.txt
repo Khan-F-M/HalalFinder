@@ -1,0 +1,10 @@
+The fetch in the main.js is not working and keeps being blocked. I don't know why that is since the link alone, in the search bar
+with a hardcoded value works fine. 
+
+The Error Chrome gives me: 
+
+Error fetching data:  TypeError: Failed to fetch
+    at loadRestaurants (main.js:15:5)
+    at HTMLDocument.<anonymous> (main.js:43:5)
+
+SOLUTION: ...Don't have one yet...
