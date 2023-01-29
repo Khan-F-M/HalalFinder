@@ -1,5 +1,5 @@
 The fetch in the main.js is not working and keeps being blocked. I don't know why that is since the link alone, in the search bar
-with a hardcoded value works fine. 
+with a hardcoded value works fine. The issue has something to do with a thing called CORS. I don't know what that is...
 
 The Error Chrome gives me: 
 
@@ -7,4 +7,27 @@ Error fetching data:  TypeError: Failed to fetch
     at loadRestaurants (main.js:15:5)
     at HTMLDocument.<anonymous> (main.js:43:5)
 
-SOLUTION: ...Don't have one yet...
+SOLUTION: OH MY GOD...I WAS MISSING THE CORS LIBRARY IN THE SERVER FILE. THIS IS VERY IMPORTANT MIDDLEWARE AND I'LL HAVE TO
+		DO MORE RESEARCH FOR IT....AHHHHH
+
+MORE ON IT: -------------------------------------------------------------------------------------------
+CORS (Cross-Origin Resource Sharing) is a security feature implemented by web browsers. 
+    It restricts web pages from making requests to a different domain than the one that 
+    served the web page.
+
+The cors package in JavaScript is a Node.js package that helps you configure your server
+    to handle CORS requests. It adds specific headers to the response of an HTTP request,
+    which the browser then uses to determine if the request is allowed. With the cors package,
+    you can configure your server to allow requests from specific domains, or from all domains,
+    which enables cross-origin communication in a controlled manner. This can be useful when building
+    an API that will be consumed by a web application running on a different domain
+
+The simplest form of CORS middleware for express.js in node.js can be implemented using the cors library:
+	const express = require('express')
+	const cors = require('cors')
+	const app = express()
+
+	app.use(cors())
+
+This implementation allows all origins to access the API. You can also specify options to restrict the origins
+that are allowed to access the API.
