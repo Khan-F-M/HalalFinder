@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
-const dotenv = require('dotenv').config();
+const dotenv = require('dotenv');
+require('dotenv').config();
 
 // set up sequelize to point to our postgres database
 var sequelize = new Sequelize(DB_USER, DB_USER, DB_PASS, {
