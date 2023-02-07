@@ -3,7 +3,7 @@ require('dotenv').config();
 
 // set up sequelize to point to our postgres database
 var sequelize = new Sequelize(process.env.DB_USER, process.env.DB_USER, process.env.DB_PASS, {
-    host: 'snuffleupagus.db.elephantsql.com',
+    host: process.env.DB_HOST,
     dialect: 'postgres',
     port: 5432,
     dialectOptions: {
