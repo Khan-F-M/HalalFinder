@@ -6,7 +6,7 @@ function loadRestaurants() {
             buttonValue = button.getAttribute("data-button-value");
             // store the button value in sessionStorage
             sessionStorage.setItem("buttonValue", buttonValue);
-            window.location.href = "restaurants.html";
+            window.location.href = "layout/restaurants.html";
         });
     });
 
