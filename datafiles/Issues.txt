@@ -3,3 +3,12 @@
 	a property in the JSON return object that has arrays inside of it.
 
 SOLUTION: I think this might be an error due to how I inserted the data. I will have to check the server side later...
+
+
+TO DO:
+
+1) WHAT IS CORS
+2) WHAT IS SESSION STORAGE
+3) WHAT IS DATA.DATA.MAP and NOT DATA.MAP
+4) GETTING RESTAURANT IMAGES
+5) ...etc
