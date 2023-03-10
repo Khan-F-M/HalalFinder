@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const rest = require('./modules/restaurantsdb.js')
 
 const app = express();
@@ -7,11 +8,14 @@ app.use(express.static('views'));
 
 const HTTP_PORT = process.env.PORT || 8080;
 
+
 app.use(cors());
+app.use(express.static('layout'));
 
 app.get('/', (req, res) => {
-    res.json({ msg: 'Api Listening' })
+    res.json({MESSAGE: 'API LISTENING'})
 });
+
 
 app.get('/Restaurants', (req, res) => {
     rest.getAllRestaurants().then((data) => {

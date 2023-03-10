@@ -22,7 +22,7 @@ function loadRestaurants() {
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="images/Italian.jpg" class="d-block w-100" alt="..."
+                                <img src="/images/Italian.jpg" class="d-block w-100" alt="..."
                                     style=" height: 200px; width: 100%;">
                             </div>
                             <div class="carousel-item">
